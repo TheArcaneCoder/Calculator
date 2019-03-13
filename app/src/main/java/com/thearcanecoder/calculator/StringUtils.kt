@@ -2,6 +2,10 @@ package com.thearcanecoder.calculator
 
 import android.util.Log
 
+/**
+ * String utility class
+ * @author Bilal Naeem
+ */
 class StringUtils {
     companion object {
         private const val TAG = "STRING_UTILS"

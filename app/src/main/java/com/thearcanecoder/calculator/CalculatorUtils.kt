@@ -2,7 +2,11 @@ package com.thearcanecoder.calculator
 
 import android.util.Log
 
-class CalculatorButtonHandler {
+/**
+ * Calculator Button Handler
+ * @author Bilal Naeem
+ */
+class CalculatorUtils {
     companion object {
         private const val TAG = "BUTTON_HANDLER"
 
@@ -19,6 +23,7 @@ class CalculatorButtonHandler {
 
             when (buttonPressed) {
                 "0" -> {
+                    //TODO: Fix this condition
                     return if (lastCharacter == "0" && currentInput.length == 1) {
                         ""
                     } else {

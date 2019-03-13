@@ -51,79 +51,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var textToAdd = ""
 
         when (v?.id) {
-            mButton0.id -> {
-                Log.i(TAG, "0 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "0")
+            mButton0.id, mButton1.id, mButton2.id, mButton3.id, mButton4.id, mButton5.id, mButton6.id,
+            mButton7.id, mButton8.id, mButton9.id, mButtonPlus.id, mButtonMinus.id, mButtonMultiply.id,
+            mButtonDivide.id, mButtonBracket.id, mButtonPercent.id, mButtonDecimal.id -> {
+                textToAdd = CalculatorUtils.getStringToAdd(
+                    mResultField.text.toString(), (v as Button).text.toString())
             }
-            mButton1.id -> {
-                Log.i(TAG, "1 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "1")
-            }
-            mButton2.id -> {
-                Log.i(TAG, "2 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "2")
-            }
-            mButton3.id -> {
-                Log.i(TAG, "3 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "3")
-            }
-            mButton4.id -> {
-                Log.i(TAG, "4 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "4")
-            }
-            mButton5.id -> {
-                Log.i(TAG, "5 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "5")
-            }
-            mButton6.id -> {
-                Log.i(TAG, "6 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "6")
-            }
-            mButton7.id -> {
-                Log.i(TAG, "7 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "7")
-            }
-            mButton8.id -> {
-                Log.i(TAG, "8 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "8")
-            }
-            mButton9.id -> {
-                Log.i(TAG, "9 pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "9")
-            }
-            mButtonPlus.id -> {
-                Log.i(TAG, "+ pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "+")
-            }
-            mButtonMinus.id -> {
-                Log.i(TAG, "- pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "-")
-            }
-            mButtonMultiply.id -> {
-                Log.i(TAG, "* pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "*")
-            }
-            mButtonDivide.id -> {
-                Log.i(TAG, "/ pressed")
-                textToAdd = CalculatorButtonHandler.getStringToAdd(mResultField.text.toString(), "/")
+            mButtonEqual.id -> {
+                Log.i(TAG, "= pressed")
             }
             mButtonClear.id -> {
                 Log.i(TAG, "C pressed")
             }
             mButtonSign.id -> {
                 Log.i(TAG, "+/- pressed")
-            }
-            mButtonBracket.id -> {
-                Log.i(TAG, "( ) pressed")
-            }
-            mButtonPercent.id -> {
-                Log.i(TAG, "% pressed")
-            }
-            mButtonDecimal.id -> {
-                Log.i(TAG, ". pressed")
-            }
-            mButtonEqual.id -> {
-                Log.i(TAG, "= pressed")
             }
         }
 
