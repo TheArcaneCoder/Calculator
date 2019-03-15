@@ -26,9 +26,8 @@ class CalculatorUtils {
                     if (buttonPressed == "0") {
                         if (currentInput.length == 1 && lastCharacter == "0") {
                             ""
-                        } else if (StringUtils.isOperator(lastCharacter) || StringUtils.isNonZeroDigit(lastCharacter)) {
-                            "0"
-                        } else if (StringUtils.extractNumbers(currentInput).last() != 0) {
+                        } else if (StringUtils.isOperator(lastCharacter) || StringUtils.isNonZeroDigit(lastCharacter) ||
+                            StringUtils.extractNumbers(currentInput).last() != 0) {
                             "0"
                         } else {
                             ""
@@ -44,7 +43,6 @@ class CalculatorUtils {
                     else {
                         buttonPressed
                     }
-
                 }
                 else -> {
                     ""
