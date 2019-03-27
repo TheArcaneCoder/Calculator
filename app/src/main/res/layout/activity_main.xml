@@ -34,7 +34,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="( )"
@@ -46,7 +46,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="%"
@@ -58,7 +58,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="/"
@@ -70,7 +70,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
         </LinearLayout>
 
         <LinearLayout
@@ -91,7 +91,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="8"
@@ -103,7 +103,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="9"
@@ -115,7 +115,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="*"
@@ -127,7 +127,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
         </LinearLayout>
 
         <LinearLayout
@@ -148,7 +148,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="5"
@@ -160,7 +160,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="6"
@@ -172,7 +172,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="+"
@@ -184,7 +184,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
         </LinearLayout>
 
         <LinearLayout
@@ -205,7 +205,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="2"
@@ -217,7 +217,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="3"
@@ -229,7 +229,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="-"
@@ -241,7 +241,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
         </LinearLayout>
 
         <LinearLayout
@@ -262,7 +262,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="0"
@@ -274,7 +274,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="."
@@ -286,7 +286,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
 
             <Button
                     android:text="="
@@ -298,7 +298,7 @@
                     android:textSize="20sp"
                     android:background="?android:attr/selectableItemBackground"
                     android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp"/>
+                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -308,8 +308,14 @@
             android:id="@+id/result_field"
             android:layout_above="@id/button_layout"
             android:padding="16dp"
-            android:gravity="right|center_vertical|end"
-            android:textSize="30sp"
+            android:gravity="center_vertical|end"
+            android:textSize="20sp"
             app:fontFamily="@font/nanumgothic_bold"
+            android:fontFamily="@font/nanumgothic_regular"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/input_field" android:padding="16dp"
+            android:fontFamily="@font/nanumgothic_regular" android:textSize="24sp"
+            android:layout_above="@+id/result_field" android:gravity="bottom|end" android:lines="5"
             android:textColor="@android:color/black"/>
 </RelativeLayout>

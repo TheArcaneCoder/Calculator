@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var mButtonDecimal: Button
     private lateinit var mButtonEqual: Button
 
+    private lateinit var mInputField: TextView
     private lateinit var mResultField: TextView
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,27 +54,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
             mButton0.id, mButton1.id, mButton2.id, mButton3.id, mButton4.id, mButton5.id, mButton6.id,
             mButton7.id, mButton8.id, mButton9.id, mButtonPlus.id, mButtonMinus.id, mButtonMultiply.id,
-            mButtonDivide.id, mButtonBracket.id, mButtonPercent.id, mButtonDecimal.id -> {
+            mButtonDivide.id, mButtonBracket.id, mButtonPercent.id, mButtonDecimal.id, mButtonSign.id -> {
                 textToAdd = CalculatorButtonHandler.getStringToAdd(
-                    mResultField.text.toString(), (v as Button).text.toString())
+                    mInputField.text.toString(), (v as Button).text.toString())
             }
             mButtonEqual.id -> {
                 Log.i(TAG, "= pressed")
             }
             mButtonClear.id -> {
                 Log.i(TAG, "C pressed")
-            }
-            mButtonSign.id -> {
-                Log.i(TAG, "+/- pressed")
+                textToAdd = ""
             }
         }
 
-        textToAdd = "${mResultField.text}$textToAdd"
-        mResultField.text = textToAdd
+        mInputField.text = textToAdd
     }
 
     /**
-     * Initializes all the elements in the view
+     * Initializes all the buttons in the view
      */
     private fun initializeUiElements() {
         mButton0 = findViewById(R.id.button_0)
@@ -97,11 +95,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         mButtonDecimal = findViewById(R.id.button_decimal)
         mButtonEqual = findViewById(R.id.button_equal)
 
+        mInputField = findViewById(R.id.input_field)
         mResultField = findViewById(R.id.result_field)
     }
 
     /**
-     * Setup listeners
+     * Setup listeners on all the buttons
      */
     private fun setupListeners() {
         mButton0.setOnClickListener(this)
