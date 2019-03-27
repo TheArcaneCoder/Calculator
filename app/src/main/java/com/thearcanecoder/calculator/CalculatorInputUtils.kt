@@ -26,21 +26,6 @@ class CalculatorInputUtils {
         }
 
         /**
-         * Fetches the last number that is entered
-         * The number can consist of several digits as well as a decimal point
-         * @param  input The input string
-         * @return       The number that is being entered
-         */
-        fun getLastNumber(input: String): String {
-            Log.i(TAG, "Retrieving the last number of the string")
-
-            return input.split(
-                delimiters = *arrayOf("+", "-", "*", "/"),
-                ignoreCase = true,
-                limit = 0).last()
-        }
-
-        /**
          * Checks if the given string is a digit
          * @param  input The input string
          * @return       true if the given string is a digit
@@ -79,17 +64,13 @@ class CalculatorInputUtils {
          * @param  input The input string
          * @return       An array of numbers in the string
          */
-        fun extractNumbers(input: String): Array<Int> {
+        fun extractNumbers(input: String): List<String> {
             Log.i(TAG, "Extracting numbers from $input")
 
-            val splitString: List<String> =
-                input.split(delimiters = *arrayOf("+", "-", "*", "/"), ignoreCase = true, limit = 0)
-            val numbers: Array<Int> = Array(splitString.size) { 0 }
-            splitString.forEach {
-                numbers[splitString.indexOf(it)] = Integer.parseInt(it)
-            }
-
-            return numbers
+            return input.split(
+                delimiters = *arrayOf("+", "-", "*", "/"),
+                ignoreCase = true,
+                limit = 0)
         }
     }
 }

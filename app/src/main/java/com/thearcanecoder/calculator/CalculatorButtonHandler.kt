@@ -3,10 +3,10 @@ package com.thearcanecoder.calculator
 import android.util.Log
 
 /**
- * Calculator Button Handler
+ * Handles how each button should be handled based on the current input
  * @author Bilal Naeem
  */
-class CalculatorUtils {
+class CalculatorButtonHandler {
     companion object {
         private const val TAG = "BUTTON_HANDLER"
 
@@ -26,7 +26,8 @@ class CalculatorUtils {
                     if (buttonPressed == "0") {
                         if (currentInput.length == 1 && lastCharacter == "0") {
                             ""
-                        } else if (CalculatorInputUtils.isOperator(lastCharacter) || CalculatorInputUtils.isNonZeroDigit(lastCharacter) ||
+                        } else if (CalculatorInputUtils.isOperator(lastCharacter) ||
+                            CalculatorInputUtils.isNonZeroDigit(lastCharacter) ||
                             CalculatorInputUtils.extractNumbers(currentInput).last() != "0") {
                             "0"
                         } else {

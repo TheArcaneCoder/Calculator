@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var mButtonEqual: Button
 
     private lateinit var mResultField: TextView
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             mButton0.id, mButton1.id, mButton2.id, mButton3.id, mButton4.id, mButton5.id, mButton6.id,
             mButton7.id, mButton8.id, mButton9.id, mButtonPlus.id, mButtonMinus.id, mButtonMultiply.id,
             mButtonDivide.id, mButtonBracket.id, mButtonPercent.id, mButtonDecimal.id -> {
-                textToAdd = CalculatorUtils.getStringToAdd(
+                textToAdd = CalculatorButtonHandler.getStringToAdd(
                     mResultField.text.toString(), (v as Button).text.toString())
             }
             mButtonEqual.id -> {
