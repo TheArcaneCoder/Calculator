@@ -19,7 +19,7 @@ class CalculatorUtils {
         fun getStringToAdd(currentInput: String, buttonPressed: String): String {
             Log.i(TAG, "Checking if $buttonPressed can be added to $currentInput")
 
-            val lastCharacter: String = StringUtils.getLastCharacter(currentInput)
+            val lastCharacter: String = CalculatorInputUtils.getLastCharacter(currentInput)
 
             when (buttonPressed) {
                 "0" -> {
@@ -34,7 +34,7 @@ class CalculatorUtils {
                     return buttonPressed
                 }
                 "+", "-", "*", "/" -> {
-                    return if (StringUtils.isDigit(lastCharacter)) {
+                    return if (CalculatorInputUtils.isDigit(lastCharacter)) {
                         buttonPressed
                     } else {
                         ""

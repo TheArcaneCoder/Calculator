@@ -3,10 +3,10 @@ package com.thearcanecoder.calculator
 import android.util.Log
 
 /**
- * String utility class
+ * Calculator input utility class
  * @author Bilal Naeem
  */
-class StringUtils {
+class CalculatorInputUtils {
     companion object {
         private const val TAG = "STRING_UTILS"
 
@@ -23,6 +23,21 @@ class StringUtils {
             } else {
                 input[input.length - 1].toString()
             }
+        }
+
+        /**
+         * Fetches the last number that is entered
+         * The number can consist of several digits as well as a decimal point
+         * @param  input The input string
+         * @return       The number that is being entered
+         */
+        fun getLastNumber(input: String): String {
+            Log.i(TAG, "Retrieving the last number of the string")
+
+            return input.split(
+                delimiters = *arrayOf("+", "-", "*", "/"),
+                ignoreCase = true,
+                limit = 0).last()
         }
 
         /**
