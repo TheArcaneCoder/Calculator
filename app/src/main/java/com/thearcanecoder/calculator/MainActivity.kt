@@ -12,10 +12,6 @@ import android.widget.TextView
  * @author Bilal Naeem
  */
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-    companion object {
-        private const val TAG = "MAIN_ACTIVITY"
-    }
-
     private lateinit var mButton0: Button
     private lateinit var mButton1: Button
     private lateinit var mButton2: Button
@@ -49,25 +45,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        var textToAdd = ""
-
         when (v?.id) {
             mButton0.id, mButton1.id, mButton2.id, mButton3.id, mButton4.id, mButton5.id, mButton6.id,
             mButton7.id, mButton8.id, mButton9.id, mButtonPlus.id, mButtonMinus.id, mButtonMultiply.id,
-            mButtonDivide.id, mButtonBracket.id, mButtonPercent.id, mButtonDecimal.id, mButtonSign.id -> {
-                textToAdd = CalculatorButtonHandler.getStringToAdd(
+            mButtonDivide.id, mButtonBracket.id, mButtonPercent.id, mButtonDecimal.id, mButtonSign.id,
+            mButtonClear.id -> {
+                mInputField.text = CalculatorButtonHandler.getStringToAdd(
                     mInputField.text.toString(), (v as Button).text.toString())
             }
             mButtonEqual.id -> {
-                Log.i(TAG, "= pressed")
-            }
-            mButtonClear.id -> {
-                Log.i(TAG, "C pressed")
-                textToAdd = ""
+                mResultField.text = CalculatorButtonHandler.getStringToAdd(
+                    mInputField.text.toString(), (v as Button).text.toString())
             }
         }
-
-        mInputField.text = textToAdd
     }
 
     /**

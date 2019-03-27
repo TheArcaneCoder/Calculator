@@ -105,5 +105,27 @@ class CalculatorInputUtils {
 
             return input.contains(".")
         }
+
+        /**
+         * Checks whether the given input is an equal sign or not
+         * @param  input The input string
+         * @return       true if the given string is an equal sign
+         */
+        fun isEqual(input: String): Boolean {
+            Log.i(TAG, "Checking if $input is an equal sign")
+
+            return input == "="
+        }
+
+        /**
+         * Checks whether the given input is the clear symbol (C)
+         * @param  input the input string
+         * @return       true if the given string is the clear symbol
+         */
+        fun isClear(input: String): Boolean {
+            Log.i(TAG, "Checking if $input is the clear symbol")
+
+            return input == "C"
+        }
     }
 }

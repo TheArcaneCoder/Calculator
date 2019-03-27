@@ -44,7 +44,9 @@ class CalculatorButtonHandler {
                     if (CalculatorInputUtils.isOperator(lastCharacter)) {
                         currentInput
                     }
-                    else {
+                    else if (CalculatorInputUtils.isDecimal(lastCharacter)) {
+                        "${currentInput}0$buttonPressed"
+                    } else {
                         "$currentInput$buttonPressed"
                     }
                 }
@@ -52,9 +54,19 @@ class CalculatorButtonHandler {
                 CalculatorInputUtils.isDecimal(buttonPressed) -> {
                     if (CalculatorInputUtils.isDecimalNumber(lastNumber)) {
                         currentInput
+                    } else if (CalculatorInputUtils.isOperator(lastCharacter) || currentInput.isEmpty()) {
+                        "${currentInput}0."
                     } else {
                         "$currentInput."
                     }
+                }
+                //Handles the case when equal is pressed
+                CalculatorInputUtils.isEqual(buttonPressed) -> {
+                    currentInput
+                }
+                //Handles the case when clear is pressed
+                CalculatorInputUtils.isClear(buttonPressed) -> {
+                    ""
                 }
                 else -> {
                     currentInput
