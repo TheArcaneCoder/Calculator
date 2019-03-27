@@ -21,27 +21,31 @@ class CalculatorUtils {
 
             val lastCharacter: String = CalculatorInputUtils.getLastCharacter(currentInput)
 
-            when (buttonPressed) {
-                "0" -> {
-                    //TODO: Fix this condition
-                    return if (lastCharacter == "0" && currentInput.length == 1) {
-                        ""
+            return when {
+                CalculatorInputUtils.isDigit(buttonPressed) -> {
+                    if (buttonPressed == "0") {
+                        if (currentInput.length == 1 && lastCharacter == "0") {
+                            ""
+                        } else if (CalculatorInputUtils.isOperator(lastCharacter) || CalculatorInputUtils.isNonZeroDigit(lastCharacter) ||
+                            CalculatorInputUtils.extractNumbers(currentInput).last() != "0") {
+                            "0"
+                        } else {
+                            ""
+                        }
                     } else {
-                        "0"
+                        buttonPressed
                     }
                 }
-                "1", "2", "3", "4", "5", "6", "7", "8", "9" -> {
-                    return buttonPressed
-                }
-                "+", "-", "*", "/" -> {
-                    return if (CalculatorInputUtils.isDigit(lastCharacter)) {
-                        buttonPressed
-                    } else {
+                CalculatorInputUtils.isOperator(buttonPressed) -> {
+                    if (CalculatorInputUtils.isOperator(lastCharacter)) {
                         ""
+                    }
+                    else {
+                        buttonPressed
                     }
                 }
                 else -> {
-                    return ""
+                    ""
                 }
             }
         }
