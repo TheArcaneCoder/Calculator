@@ -62,7 +62,7 @@ class CalculatorButtonHandler {
                 }
                 //Handles the case when equal is pressed
                 CalculatorInputUtils.isEqual(buttonPressed) -> {
-                    currentInput
+                    ExpressionEvaluator.getInstance().evaluate(currentInput)
                 }
                 //Handles the case when clear is pressed
                 CalculatorInputUtils.isClear(buttonPressed) -> {

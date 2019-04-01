@@ -21,56 +21,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:divider="@drawable/vertical_divider"
-                android:showDividers="middle"
-        >
+                android:showDividers="middle">
 
             <Button
-                    android:text="C"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_clear"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_clear"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="( )"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_bracket"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_bracket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_bracket"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="%"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_percent"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_percent"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="/"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_divide"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_divide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_divide"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
         </LinearLayout>
 
         <LinearLayout
@@ -82,52 +89,60 @@
         >
 
             <Button
-                    android:text="7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_7"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_7"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_8"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_8"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_9"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_9"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="*"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_multiply"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_multiply"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
         </LinearLayout>
 
         <LinearLayout
@@ -135,56 +150,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:showDividers="middle"
-                android:divider="@drawable/vertical_divider"
-        >
+                android:divider="@drawable/vertical_divider">
 
             <Button
-                    android:text="4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_4"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_4"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_5"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_5"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_6"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_6"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="+"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_plus"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_plus"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
         </LinearLayout>
 
         <LinearLayout
@@ -192,56 +214,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:showDividers="middle"
-                android:divider="@drawable/vertical_divider"
-        >
+                android:divider="@drawable/vertical_divider">
 
             <Button
-                    android:text="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_1"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_1"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_2"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_2"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_3"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_3"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="-"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_minus"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_minus"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
         </LinearLayout>
 
         <LinearLayout
@@ -249,56 +278,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:showDividers="middle"
-                android:divider="@drawable/vertical_divider"
-        >
+                android:divider="@drawable/vertical_divider">
 
             <Button
-                    android:text="+/-"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_sign"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_sign"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_0"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="."
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_decimal"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_decimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_decimal"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
 
             <Button
-                    android:text="="
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_equal"
-                    android:layout_weight="1"
-                    app:fontFamily="@font/nanumgothic_regular"
-                    android:textSize="20sp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:textColor="@android:color/black"
-                    android:gravity="center" android:padding="24dp" android:fontFamily="@font/nanumgothic_regular"/>
+                android:id="@+id/button_equal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="@font/nanumgothic_regular"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="@string/button_equal"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:fontFamily="@font/nanumgothic_regular" />
         </LinearLayout>
     </LinearLayout>
 
@@ -312,6 +348,7 @@
             android:textSize="20sp"
             app:fontFamily="@font/nanumgothic_bold"
             android:fontFamily="@font/nanumgothic_regular"/>
+
     <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:id="@+id/input_field" android:padding="16dp"
