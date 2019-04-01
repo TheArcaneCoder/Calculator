@@ -10,6 +10,9 @@ class CalculatorButtonHandler {
     companion object {
         private const val TAG = "BUTTON_HANDLER"
 
+
+        private val mExpressionEvaluator: ExpressionEvaluator = ExpressionEvaluator.getInstance()
+
         /**
          * Returns the String after appending the current button
          * @param  currentInput  The current value of the input field
@@ -62,7 +65,7 @@ class CalculatorButtonHandler {
                 }
                 //Handles the case when equal is pressed
                 CalculatorInputUtils.isEqual(buttonPressed) -> {
-                    ExpressionEvaluator.getInstance().evaluate(currentInput)
+                    mExpressionEvaluator.evaluate(currentInput)
                 }
                 //Handles the case when clear is pressed
                 CalculatorInputUtils.isClear(buttonPressed) -> {

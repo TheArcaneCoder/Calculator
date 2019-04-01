@@ -48,10 +48,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when (v?.id) {
             mButton0.id, mButton1.id, mButton2.id, mButton3.id, mButton4.id, mButton5.id, mButton6.id,
             mButton7.id, mButton8.id, mButton9.id, mButtonPlus.id, mButtonMinus.id, mButtonMultiply.id,
-            mButtonDivide.id, mButtonBracket.id, mButtonPercent.id, mButtonDecimal.id, mButtonSign.id,
-            mButtonClear.id -> {
+            mButtonDivide.id, mButtonBracket.id, mButtonPercent.id, mButtonDecimal.id, mButtonSign.id -> {
                 mInputField.text = CalculatorButtonHandler.getStringToAdd(
                     mInputField.text.toString(), (v as Button).text.toString())
+            }
+            mButtonClear.id -> {
+                mInputField.text = ""
+                mResultField.text = ""
             }
             mButtonEqual.id -> {
                 mResultField.text = CalculatorButtonHandler.getStringToAdd(
