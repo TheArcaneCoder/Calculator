@@ -63,6 +63,17 @@ class CalculatorInputUtils {
         }
 
         /**
+         * Checks if the given string is a number
+         * @param  input The input string
+         * @return       true if the given string is a number
+         */
+        fun isNumber(input: String): Boolean {
+            Log.i(TAG, "Checking if $input is a number")
+
+            return isNonZeroDigit(input) || isZeroDigit(input)
+        }
+
+        /**
          * Checks if the given string is an operator
          * @param  input The input string
          * @return       true if the given string is an operator
@@ -126,6 +137,61 @@ class CalculatorInputUtils {
             Log.i(TAG, "Checking if $input is the clear symbol")
 
             return input == "C"
+        }
+
+        /**
+         * Checks whether the given input is the bracket symbol ( )
+         * @param  input The input string
+         * @return       true if the given string is the bracket symbol
+         */
+        fun isBracket(input: String): Boolean {
+            Log.i(TAG, "Checking if $input is the bracket symbol")
+
+            return input == "( )"
+        }
+
+        /**
+         * Checks if the given input is the open bracket (
+         * @param  input The input string
+         * @return       true if the given string is the open bracket
+         */
+        fun isOpenBracket(input: String): Boolean {
+            Log.i(TAG, "Checking if $input is the open bracket")
+
+            return input == "("
+        }
+
+        /**
+         * Checks if the given input is the close bracket )
+         * @param  input The input string
+         * @return       true if the given string is the close bracket
+         */
+        fun isCloseBracket(input: String): Boolean {
+            Log.i(TAG, "Checking if $input is the close bracket")
+
+            return input == ")"
+        }
+
+        /**
+         * Retrieves the number of open bracket symbols in the given input
+         * @param  input The given string
+         * @return       The number of open bracket symbols in the given string
+         */
+        fun getOpenBracketCount(input: String): Int {
+            Log.i(TAG, "Counting number of open bracket symbols in $input")
+
+            return input.toList().count { it == '(' }
+        }
+
+        /**
+         * Retrieves the number of close bracket symbols in the given input
+         * @param  input The given string
+         * @return       The number of close bracket symbols in the given string
+         */
+        fun getCloseBracketCount(input: String): Int {
+            Log.i(TAG, "Counting number of close bracket symbols in $input")
+
+            return input.toList().count { it == ')' }
         }
     }
 }

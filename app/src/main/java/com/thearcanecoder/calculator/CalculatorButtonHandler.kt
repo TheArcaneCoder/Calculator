@@ -46,8 +46,9 @@ class CalculatorButtonHandler {
                 CalculatorInputUtils.isOperator(buttonPressed) -> {
                     if (CalculatorInputUtils.isOperator(lastCharacter)) {
                         currentInput
-                    }
-                    else if (CalculatorInputUtils.isDecimal(lastCharacter)) {
+                    } else if (CalculatorInputUtils.isOpenBracket(lastCharacter)) {
+                        currentInput
+                    } else if (CalculatorInputUtils.isDecimal(lastCharacter)) {
                         "${currentInput}0$buttonPressed"
                     } else {
                         "$currentInput$buttonPressed"
@@ -70,6 +71,21 @@ class CalculatorButtonHandler {
                 //Handles the case when clear is pressed
                 CalculatorInputUtils.isClear(buttonPressed) -> {
                     ""
+                }
+                //Handles the case when bracket is pressed
+                CalculatorInputUtils.isBracket(buttonPressed) -> {
+                    if (lastCharacter.isEmpty() || CalculatorInputUtils.isOperator(lastCharacter)) {
+                        "$currentInput("
+                    } else if (CalculatorInputUtils.isNumber(lastCharacter)){
+                        if (CalculatorInputUtils.getOpenBracketCount(currentInput) >
+                            CalculatorInputUtils.getCloseBracketCount(currentInput)) {
+                            "$currentInput)"
+                        } else {
+                            "$currentInput*("
+                        }
+                    } else {
+                        "$currentInput)"
+                    }
                 }
                 else -> {
                     currentInput
