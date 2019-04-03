@@ -74,9 +74,25 @@ class CalculatorButtonHandler {
                 }
                 //Handles the case when bracket is pressed
                 CalculatorInputUtils.isBracket(buttonPressed) -> {
-                    if (lastCharacter.isEmpty() || CalculatorInputUtils.isOperator(lastCharacter)) {
+                    if (currentInput.isEmpty() || CalculatorInputUtils.isOperator(lastCharacter)) {
                         "$currentInput("
-                    } else if (CalculatorInputUtils.isNumber(lastCharacter)){
+                    } else if (CalculatorInputUtils.isOpenBracket(lastCharacter)) {
+                        "$currentInput("
+                    } else if (CalculatorInputUtils.isCloseBracket(lastCharacter)) {
+                        if (CalculatorInputUtils.getOpenBracketCount(currentInput) >
+                            CalculatorInputUtils.getCloseBracketCount(currentInput)) {
+                            "$currentInput)"
+                        } else {
+                            "$currentInput*("
+                        }
+                    } else if (CalculatorInputUtils.isDecimal(lastCharacter)) {
+                        if (CalculatorInputUtils.getOpenBracketCount(currentInput) >
+                            CalculatorInputUtils.getCloseBracketCount(currentInput)) {
+                            "${currentInput}0)"
+                        } else {
+                            "${currentInput}0*("
+                        }
+                    } else if (CalculatorInputUtils.isNumber(lastCharacter)) {
                         if (CalculatorInputUtils.getOpenBracketCount(currentInput) >
                             CalculatorInputUtils.getCloseBracketCount(currentInput)) {
                             "$currentInput)"
@@ -84,7 +100,7 @@ class CalculatorButtonHandler {
                             "$currentInput*("
                         }
                     } else {
-                        "$currentInput)"
+                        "$currentInput*("
                     }
                 }
                 else -> {
