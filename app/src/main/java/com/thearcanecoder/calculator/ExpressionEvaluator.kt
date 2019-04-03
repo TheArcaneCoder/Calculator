@@ -56,6 +56,27 @@ class ExpressionEvaluator {
                 } else {
                     operators.push(it.toString())
                 }
+            } else if (it == '(') {
+                if (!numberBuffer.isEmpty()) {
+                    operands.push(numberBuffer.toString())
+                    numberBuffer.delete(0, numberBuffer.length)
+                }
+
+                operators.push(it.toString())
+            } else if (it == ')') {
+                if (!numberBuffer.isEmpty()) {
+                    operands.push(numberBuffer.toString())
+                    numberBuffer.delete(0, numberBuffer.length)
+                }
+
+                while (true) {
+                    val operator: String = operators.pop()
+                    if (operator == "(") {
+                        break
+                    }
+
+                    operands.push(applyOperator(operator, operands.pop(), operands.pop()))
+                }
             }
         }
 
@@ -64,7 +85,10 @@ class ExpressionEvaluator {
         }
 
         while (!operators.isEmpty()) {
-            operands.push(applyOperator(operators.pop(), operands.pop(), operands.pop()))
+            val operator: String = operators.pop()
+
+            if (operator == "(") { continue }
+            operands.push(applyOperator(operator, operands.pop(), operands.pop()))
         }
 
         return if (operands.isEmpty()) {
@@ -88,7 +112,7 @@ class ExpressionEvaluator {
         } else if ((operator1 == "+" || operator1 == "-") && (operator2 == "*" || operator2 == "/")) {
             false
         } else {
-            true
+            false
         }
     }
 
