@@ -40,7 +40,7 @@ class ExpressionEvaluator {
         val numberBuffer: StringBuffer = StringBuffer()
 
         expression.forEach {
-            if (it in '0'..'9') {
+            if (it in '0'..'9' || it == '.') {
                 numberBuffer.append(it)
             } else if (it == '+' || it == '-' || it == '*' || it == '/') {
                 if (!numberBuffer.isEmpty()) {
@@ -56,6 +56,13 @@ class ExpressionEvaluator {
                 } else {
                     operators.push(it.toString())
                 }
+            } else if (it == '%') {
+                if (!numberBuffer.isEmpty()) {
+                    operands.push(numberBuffer.toString())
+                    numberBuffer.delete(0, numberBuffer.length)
+                }
+
+                operands.push(applyOperator("/", "100", operands.pop()))
             } else if (it == '(') {
                 if (!numberBuffer.isEmpty()) {
                     operands.push(numberBuffer.toString())

@@ -103,6 +103,16 @@ class CalculatorButtonHandler {
                         "$currentInput*("
                     }
                 }
+                //Handles the case when the percent button is pressed
+                CalculatorInputUtils.isPercent(buttonPressed) -> {
+                    if (CalculatorInputUtils.isNumber(lastCharacter)) {
+                        "$currentInput%"
+                    } else if (CalculatorInputUtils.isDecimal(lastCharacter)) {
+                        "${currentInput}0%"
+                    } else {
+                        currentInput
+                    }
+                }
                 else -> {
                     currentInput
                 }

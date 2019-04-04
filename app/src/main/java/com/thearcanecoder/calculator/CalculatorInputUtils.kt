@@ -173,6 +173,17 @@ class CalculatorInputUtils {
         }
 
         /**
+         * Checks if the given input is the percent sign %
+         * @param  input The input string
+         * @return       true if the given string is the percent sign
+         */
+        fun isPercent(input: String): Boolean {
+            Log.i(TAG, "Checking if $input is the percent sign")
+
+            return input == "%"
+        }
+
+        /**
          * Retrieves the number of open bracket symbols in the given input
          * @param  input The given string
          * @return       The number of open bracket symbols in the given string
