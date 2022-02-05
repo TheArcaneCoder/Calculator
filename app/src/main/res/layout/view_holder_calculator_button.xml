@@ -7,7 +7,7 @@
     <data>
         <variable
             name="button"
-            type="com.thearcanecoder.calculator.data.CalculatorButton" />
+            type="com.thearcanecoder.calculator.data.models.CalculatorButton" />
 
         <variable
             name="listener"
@@ -32,7 +32,7 @@
             android:fontFamily="@font/dongle_regular"
             android:gravity="center"
             android:clickable="true"
-            android:text="@{button.text}"
+            android:text="@{button.value}"
             android:textSize="@dimen/_28ssp"
             android:textColor="@color/black"
             app:layout_constraintDimensionRatio="1:1"

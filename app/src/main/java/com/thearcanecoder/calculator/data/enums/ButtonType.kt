@@ -1,4 +1,4 @@
-package com.thearcanecoder.calculator.data.enum
+package com.thearcanecoder.calculator.data.enums
 
 enum class ButtonType(val type: Int) {
     NUMBER(0),
@@ -6,5 +6,6 @@ enum class ButtonType(val type: Int) {
     EVALUATE(2),
     DECIMAL(3),
     CLEAR(4),
-    PARENTHESIS(5)
+    OPEN_PARENTHESIS(5),
+    CLOSE_PARENTHESIS(6)
 }

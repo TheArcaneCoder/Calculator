@@ -1,7 +1,7 @@
 package com.thearcanecoder.calculator.ui.viewholder
 
 import androidx.recyclerview.widget.RecyclerView
-import com.thearcanecoder.calculator.data.CalculatorButton
+import com.thearcanecoder.calculator.data.models.CalculatorButton
 import com.thearcanecoder.calculator.databinding.ViewHolderCalculatorButtonBinding
 import com.thearcanecoder.calculator.listener.CalculatorButtonClickListener
 

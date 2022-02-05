@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
         <variable name="input" type="String" />
+        <variable name="index" type="Integer" />
         <variable
             name="listener"
             type="com.thearcanecoder.calculator.listener.CalculatorInputClickListener" />
@@ -21,5 +20,5 @@
         android:textSize="@dimen/_24ssp"
         android:textColor="@color/black"
         android:text="@{input}"
-        android:onClick="@{(v) -> listener.onCalculatorInputClick(input)}"/>
+        android:onClick="@{(v) -> listener.onCalculatorInputClick(index)}"/>
 </layout>

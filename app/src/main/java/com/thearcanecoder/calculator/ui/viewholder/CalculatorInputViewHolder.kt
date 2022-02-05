@@ -7,8 +7,9 @@ import com.thearcanecoder.calculator.listener.CalculatorInputClickListener
 class CalculatorInputViewHolder(private val binding: ViewHolderCalculatorInputBinding) :
     RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(input: String, listener: CalculatorInputClickListener?) {
+    fun bind(input: String, listener: CalculatorInputClickListener?, position: Int) {
         binding.input = input
         binding.listener = listener
+        binding.index = position
     }
 }

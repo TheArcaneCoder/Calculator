@@ -29,7 +29,7 @@ class CalculatorInputAdapter(
     }
 
     override fun onBindViewHolder(holder: CalculatorInputViewHolder, position: Int) {
-        holder.bind(calculatorInput[position], listener)
+        holder.bind(calculatorInput[position], listener, position)
     }
 
     fun addNewInput(input: String) {

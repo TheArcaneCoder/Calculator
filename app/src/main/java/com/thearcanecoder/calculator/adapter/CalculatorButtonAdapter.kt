@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.thearcanecoder.calculator.R
-import com.thearcanecoder.calculator.data.CalculatorButton
+import com.thearcanecoder.calculator.data.models.CalculatorButton
 import com.thearcanecoder.calculator.listener.CalculatorButtonClickListener
 import com.thearcanecoder.calculator.ui.viewholder.CalculatorButtonViewHolder
 
