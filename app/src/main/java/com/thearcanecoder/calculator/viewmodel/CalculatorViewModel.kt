@@ -7,6 +7,7 @@ import com.thearcanecoder.calculator.data.enums.ButtonType
 import com.thearcanecoder.calculator.data.enums.InputType
 import com.thearcanecoder.calculator.data.models.CalculatorButton
 import com.thearcanecoder.calculator.data.models.InputPart
+import com.thearcanecoder.calculator.util.InputHelper
 import org.mariuszgromada.math.mxparser.Expression
 
 class CalculatorViewModel : ViewModel() {
@@ -69,9 +70,7 @@ class CalculatorViewModel : ViewModel() {
                         historyItem.joinToString("") { it.value }
                     }
 
-                    val result: Double = Expression(input.joinToString("") {
-                        it.internalValue
-                    }).calculate()
+                    val result: Double = Expression(InputHelper.getValidInput(input)).calculate()
                     input.clear()
                     input.add(InputPart(result.toString(), result.toString(), InputType.NUMBER))
                 }
